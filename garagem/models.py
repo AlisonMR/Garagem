@@ -17,12 +17,6 @@ class Cor(models.Model):
 
     def __str__(self):
         return self.descricao
-
-class Marca(models.Model):
-    nome = models.CharField(max_length=50)
-
-    def __str__(self):
-        return self.nome
     
 class Modelo(models.Model):
     Categoria = models.ForeignKey(Categoria, on_delete=models.PROTECT, related_name="modelo")
