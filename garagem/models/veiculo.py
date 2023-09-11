@@ -1,5 +1,8 @@
 from django.db import models
 
+from garagem.models import Acessorio, Modelo, Cor
+
+
 class Veiculo(models.Model):
     Acessorio = models.ForeignKey(Acessorio, on_delete=models.PROTECT, related_name="veiculos")
     Modelo = models.ForeignKey(Modelo, on_delete=models.PROTECT, related_name="veiculos")
