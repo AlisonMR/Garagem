@@ -1,8 +1,5 @@
-from rest_framework.serializers import ModelSerializer
-
-from garagem.models import Veiculo
-
 from rest_framework.serializers import ModelSerializer, SlugRelatedField
+from garagem.models import Veiculo
 
 from uploader.models import Image
 from uploader.serializers import ImageSerializer

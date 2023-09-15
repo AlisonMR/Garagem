@@ -5,3 +5,7 @@ class Acessorio(models.Model):
 
     def __str__(self):
         return self.descricao
+
+    class Meta:
+        verbose_name = "Acessório"
+        verbose_name_plural = "Acessórios"
