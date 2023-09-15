@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "uploader",
     "drf_spectacular",
     "garagem",
+    "django_extensions",
     
 ]
 
