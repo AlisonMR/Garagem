@@ -12,7 +12,7 @@ authors = [
     {name = "Alison", email = "alisonraffaelly@gmail.com"},
 ]
 dependencies = [
-    "django>=4.2.4",
+    "django>=4.2.5",
     "djangorestframework>=3.14.0",
     "setuptools>=68.2.0",
     "python-magic>=0.4.27",
@@ -21,6 +21,7 @@ dependencies = [
     "django-extensions>=3.2.3",
     "pydotplus>=2.0.2",
     "django-cors-headers>=4.2.0",
+    "djangorestframework-simplejwt>=5.3.0",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
