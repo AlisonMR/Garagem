@@ -8,7 +8,8 @@ class VeiculoSerializer(ModelSerializer):
     class Meta:
         model = Veiculo
         fields = "__all__"
-        capa_attachment_key = SlugRelatedField(
+        
+    capa_attachment_key = SlugRelatedField(
         source="capa",
         queryset=Image.objects.all(),
         slug_field="attachment_key",
@@ -16,14 +17,15 @@ class VeiculoSerializer(ModelSerializer):
         write_only=True,
         )
 
-        capa = ImageSerializer(required=False, read_only=True)
+    capa = ImageSerializer(required=False, read_only=True)
 
 class VeiculoDetailSerializer(ModelSerializer):
+    capa = ImageSerializer(required=False)
+    
     class Meta:
         model = Veiculo
         fields = "__all__"
-        depth = 1
-        capa = ImageSerializer(required=False)
+        depth = 2
 
 class VeiculoListSerializer(ModelSerializer):
     class Meta:
